@@ -1,0 +1,20 @@
+package Payment;
+
+public class Check extends PaymentType {
+
+    private final String paymentName = "Check";
+    public int getCheckNumber() {
+        return checkNumber;
+    }
+
+    public void setCheckNumber(int checkNumber) {
+        this.checkNumber = checkNumber;
+    }
+
+    private int checkNumber = -999;
+
+    @Override
+    public String toString() {
+        return "Check";
+    }
+}
